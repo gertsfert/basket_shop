@@ -3,17 +3,28 @@ from django.db.models import CASCADE
 
 
 class IngredientType(models.Model):
+
+    def __str__(self):
+        return self.name
+
     # fruit/veg; canned; meat; etc
     name = models.CharField(max_length=100)
 
 
 class Ingredient(models.Model):
+    def __str__(self):
+        return self.name
+
     name = models.CharField(max_length=100)
     ingredient_type = models.ForeignKey(IngredientType, on_delete=CASCADE)
     shelf_life = models.DurationField()
 
 
 class Recipie(models.Model):
+    def __str__(self):
+        return self.name
+
+    name = models.CharField(max_length=200)
     introduction = models.TextField()
     photo = models.ImageField(upload_to='recipie_photos')
     serves = models.PositiveSmallIntegerField()
