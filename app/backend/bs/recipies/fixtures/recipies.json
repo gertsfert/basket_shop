@@ -1,0 +1,25 @@
+[
+  {
+    "model": "recipies.ingredienttype",
+    "pk": 1,
+    "fields": {
+      "name": "Fruit"
+    }
+  },
+  {
+    "model": "recipies.ingredienttype",
+    "pk": 2,
+    "fields": {
+      "name": "Meat"
+    }
+  },
+  {
+    "model": "recipies.ingredient",
+    "pk": 1,
+    "fields": {
+      "name": "Beef Mince",
+      "ingredient_type": 2,
+      "shelf_life": "5 00:00:00"
+    }
+  }
+]
