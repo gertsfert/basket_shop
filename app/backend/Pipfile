@@ -12,6 +12,7 @@ psycopg2 = "*"
 pillow = "*"
 psycopg2-binary = "*"
 coverage = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
