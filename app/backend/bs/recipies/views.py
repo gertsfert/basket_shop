@@ -1,6 +1,8 @@
-from recipies.models import IngredientType, Ingredient
 from recipies.serializers import *
 from rest_framework import generics
+
+from recipies.models import (
+    IngredientType, Ingredient, Recipie, RecipieIngredient, RecipieStep)
 
 
 class IngredientTypeListCreate(generics.ListCreateAPIView):
@@ -16,11 +18,6 @@ class IngredientSerializers(generics.ListCreateAPIView):
 class RecipieIngredientSerializers(generics.ListCreateAPIView):
     queryset = RecipieIngredient.objects.all()
     serializer_class = RecipieIngredientSerializers
-
-
-class RecipieStepSerializers(generics.ListCreateAPIView):
-    queryset = RecipieStep.objects.all()
-    serializer_class = RecipieStepSerializers
 
 
 class RecipieSerializers(generics.ListCreateAPIView):

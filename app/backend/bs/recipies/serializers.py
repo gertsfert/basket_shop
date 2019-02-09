@@ -1,5 +1,6 @@
 from rest_framework import serializers
-from recipies.models import IngredientType, Ingredient, RecipieIngredient, RecipieStep, Recipie
+from recipies.models import (IngredientType, Ingredient, RecipieIngredient,
+                             RecipieStep, Recipie)
 
 
 class IngredientTypeSerializers(serializers.ModelSerializer):
@@ -9,24 +10,36 @@ class IngredientTypeSerializers(serializers.ModelSerializer):
 
 
 class IngredientSerializers(serializers.ModelSerializer):
+    ingredient_type = IngredientTypeSerializers(read_only=True)
+
     class Meta:
         model = Ingredient
         fields = '__all__'
 
 
 class RecipieIngredientSerializers(serializers.ModelSerializer):
+    ingredient = IngredientSerializers(read_only=True)
+
     class Meta:
         model = RecipieIngredient
-        fields = '__all__'
+        fields = ('id', 'ingredient', 'quantity', 'unit',
+                  'adjective', 'notes')
 
 
 class RecipieStepSerializers(serializers.ModelSerializer):
     class Meta:
         model = RecipieStep
-        fields = '__all__'
+        fields = ('id', 'number', 'text')
 
 
 class RecipieSerializers(serializers.ModelSerializer):
+    """
+    Returns the details of the recipie
+    """
+    steps = RecipieStepSerializers(many=True, read_only=True)
+    ingredients = RecipieIngredientSerializers(many=True, read_only=True)
+
     class Meta:
         model = Recipie
-        fields = '__all__'
+        fields = ('id', 'name', 'introduction',
+                  'serves', 'ingredients', 'steps')
