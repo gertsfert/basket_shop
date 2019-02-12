@@ -22,7 +22,7 @@ const Table = ({ data }) =>
           {data.map(el => (
             <tr key={el.id}>
               {Object.entries(el).map(el => (
-                <td key={key(el)}>{el[1]}</td>
+                <td key={key(el)}>test</td>
               ))}
             </tr>
           ))}

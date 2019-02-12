@@ -1,7 +1,6 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -18,10 +17,11 @@
     "webpack-cli": "^3.2.3"
   },
   "scripts": {
-    "dev": "webpack --mode development ./project/bs/frontend/src/index.js --output ./project/bs/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./project/bs/frontend/src/index.js --output ./project/bs/frontend/static/frontend/main.js"
+    "dev": "webpack --mode development ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./project/frontend/src/index.js --output ./project/frontend/static/frontend/main.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": ""
 }
