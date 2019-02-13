@@ -83,7 +83,7 @@
         "model": "recipies.recipie",
         "pk": 1,
         "fields": {
-            "name": "Eeasy Garlic Bread",
+            "name": "Easy Garlic Bread",
             "introduction": "This simple garlic bread recipie is a match made in heaven for all kinds of pasta dishes",
             "serves": 8
         }
