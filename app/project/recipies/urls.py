@@ -6,5 +6,5 @@ urlpatterns = [
     path('api/ingredient/', views.IngredientSerializers.as_view()),
     path('api/recipieingredient/',
          views.RecipieIngredientSerializers.as_view()),
-    path('api/recipie/', views.RecipieSerializers.as_view()),
+    path('api/recipies/', views.RecipieBrowseSerializers.as_view()),
 ]

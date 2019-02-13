@@ -20,6 +20,6 @@ class RecipieIngredientSerializers(generics.ListCreateAPIView):
     serializer_class = RecipieIngredientSerializers
 
 
-class RecipieSerializers(generics.ListCreateAPIView):
+class RecipieBrowseSerializers(generics.ListCreateAPIView):
     queryset = Recipie.objects.all()
-    serializer_class = RecipieSerializers
+    serializer_class = RecipieBrowseSerializers

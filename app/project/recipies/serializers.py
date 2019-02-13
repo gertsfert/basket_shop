@@ -43,3 +43,13 @@ class RecipieSerializers(serializers.ModelSerializer):
         model = Recipie
         fields = ('id', 'name', 'introduction',
                   'serves', 'ingredients', 'steps')
+
+
+class RecipieBrowseSerializers(serializers.ModelSerializer):
+    """
+    Returns all recipies for a browse view
+    """
+    class Meta:
+        model = Recipie
+        fields = ('id', 'name', 'introduction',
+                  'serves')
