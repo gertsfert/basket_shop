@@ -6,17 +6,21 @@ const Recipie = ({ data }) =>
     !data.length ? (
         <p>Nothing to show</p>
     ) : (
-        data.map(recipie => (
-            <div className="box">
-                <div className="columns">
-                    <div className="column">
-                        <h2 className="subtitle">{recipie.name}</h2>
-                        <h3>Serves: {recipie.serves}</h3>
-                        <p>{recipie.introduction}</p>
+        <div class="columns">
+            <div class="column">
+                {data.map(recipie => (
+                    <div className="box">
+                        <div className="columns">
+                            <div className="column">
+                                <h2 className="subtitle">{recipie.name}</h2>
+                                <h3>Serves: {recipie.serves}</h3>
+                                <p>{recipie.introduction}</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                ))}
             </div>
-        ))
+        </div>
     );
 
 Recipie.propTypes = {
