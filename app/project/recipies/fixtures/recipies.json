@@ -38,7 +38,7 @@
         "model": "recipies.ingredient",
         "pk": 1,
         "fields": {
-            "name": "Beef Mince",
+            "name": "Lamb Shank",
             "ingredient_type": 2,
             "shelf_life": "5 00:00:00"
         }
@@ -258,6 +258,270 @@
             "ingredient": 8,
             "quantity": 50,
             "unit": "",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipie",
+        "pk": 3,
+        "fields": {
+            "name": "Lamb Parcels",
+            "introduction": "Quick, delicious and simple lamb dish.",
+            "serves": 4
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 7,
+        "fields": {
+            "recipie": 3,
+            "number": 1,
+            "text": "Spray 4 pieces of foil lightly with oil"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 8,
+        "fields": {
+            "recipie": 3,
+            "number": 2,
+            "text": "Liberally coat each shank with soup mix"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 9,
+        "fields": {
+            "recipie": 3,
+            "number": 3,
+            "text": "Wrap in foil and place in casserole dish."
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 9,
+        "fields": {
+            "recipie": 3,
+            "number": 4,
+            "text": "Bake at 180C for 30-45 minutes, checking after approximately 30 minutes."
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 8,
+        "fields": {
+            "name": "French onion instant soup",
+            "ingredient_type": 5,
+            "shelf_life": "730 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 8,
+        "fields": {
+            "recipie": 3,
+            "ingredient": 1,
+            "quantity": 4,
+            "unit": "",
+            "adjective": "trimmed",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 9,
+        "fields": {
+            "recipie": 3,
+            "ingredient": 8,
+            "quantity": 50,
+            "unit": "grams",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipie",
+        "pk": 4,
+        "fields": {
+            "name": "Oven Chips",
+            "introduction": "Quick to make and delicious!",
+            "serves": 6
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 10,
+        "fields": {
+            "recipie": 4,
+            "number": 1,
+            "text": "Preheat oven to 220C"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 11,
+        "fields": {
+            "recipie": 4,
+            "number": 2,
+            "text": "Cut potatioes iunto slices approximately 1 cm thick"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 12,
+        "fields": {
+            "recipie": 4,
+            "number": 3,
+            "text": "Soak chips in cold water for 10 minutes, drain well, then pat dry with paper towles"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 13,
+        "fields": {
+            "recipie": 4,
+            "number": 4,
+            "text": "Spread chips onto baking tray, sprinkle with oil. Toss to coat."
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 11,
+        "fields": {
+            "recipie": 4,
+            "number": 5,
+            "text": "Bake for 45-55 minutes until golden and crisp, turning occasionally."
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 9,
+        "fields": {
+            "name": "Potatoes",
+            "ingredient_type": 1,
+            "shelf_life": "60 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 10,
+        "fields": {
+            "name": "Olive Oil",
+            "ingredient_type": 5,
+            "shelf_life": "180 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 10,
+        "fields": {
+            "recipie": 4,
+            "ingredient": 9,
+            "quantity": 6,
+            "unit": "",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 11,
+        "fields": {
+            "recipie": 4,
+            "ingredient": 10,
+            "quantity": 3,
+            "unit": "tablespoons",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipie",
+        "pk": 5,
+        "fields": {
+            "name": "Sizzling Cheese Bread",
+            "introduction": "Ever go to Sizzler just for the bread? Well this simple recipe is just as good and is so simple to make.",
+            "serves": 1
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 12,
+        "fields": {
+            "recipie": 5,
+            "number": 1,
+            "text": "Melt butter and spread over bread"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 13,
+        "fields": {
+            "recipie": 5,
+            "number": 2,
+            "text": "Shake a generous amount of parmesan cheese onto the bread and press lightly so it sticks"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 14,
+        "fields": {
+            "recipie": 5,
+            "number": 3,
+            "text": "Heat some oil in a frying pan and place the bread in the pan cheese side down. Cook for approximately 45 seconds."
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 11,
+        "fields": {
+            "name": "white bread",
+            "ingredient_type": 3,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 12,
+        "fields": {
+            "name": "parmesan cheese",
+            "ingredient_type": 4,
+            "shelf_life": "60 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 12,
+        "fields": {
+            "recipie": 5,
+            "ingredient": 11,
+            "quantity": 1,
+            "unit": "slice",
+            "adjective": "thick",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 13,
+        "fields": {
+            "recipie": 5,
+            "ingredient": 3,
+            "quantity": 0.5,
+            "unit": "tablespoons",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 14,
+        "fields": {
+            "recipie": 5,
+            "ingredient": 12,
+            "quantity": 0.5,
+            "unit": "cup",
             "adjective": "",
             "notes": ""
         }
