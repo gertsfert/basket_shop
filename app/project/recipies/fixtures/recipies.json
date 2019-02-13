@@ -1,25 +1,265 @@
 [
-  {
-    "model": "recipies.ingredienttype",
-    "pk": 1,
-    "fields": {
-      "name": "Fruit"
+    {
+        "model": "recipies.ingredienttype",
+        "pk": 1,
+        "fields": {
+            "name": "Fruit/Vegetables"
+        }
+    },
+    {
+        "model": "recipies.ingredienttype",
+        "pk": 2,
+        "fields": {
+            "name": "Meat"
+        }
+    },
+    {
+        "model": "recipies.ingredienttype",
+        "pk": 3,
+        "fields": {
+            "name": "Bakery"
+        }
+    },
+    {
+        "model": "recipies.ingredienttype",
+        "pk": 4,
+        "fields": {
+            "name": "Refridgerated"
+        }
+    },
+    {
+        "model": "recipies.ingredienttype",
+        "pk": 5,
+        "fields": {
+            "name": "Pantry"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 1,
+        "fields": {
+            "name": "Beef Mince",
+            "ingredient_type": 2,
+            "shelf_life": "5 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 2,
+        "fields": {
+            "name": "Sourdough Vienna Loaf",
+            "ingredient_type": 3,
+            "shelf_life": "5 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 3,
+        "fields": {
+            "name": "Butter",
+            "ingredient_type": 4,
+            "shelf_life": "30 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 4,
+        "fields": {
+            "name": "Garlic",
+            "ingredient_type": 1,
+            "shelf_life": "14 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 5,
+        "fields": {
+            "name": "fresh flat-leaf parsley leaves",
+            "ingredient_type": 1,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipie",
+        "pk": 1,
+        "fields": {
+            "name": "Eeasy Garlic Bread",
+            "introduction": "This simple garlic bread recipie is a match made in heaven for all kinds of pasta dishes",
+            "serves": 8
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 1,
+        "fields": {
+            "recipie": 1,
+            "number": 1,
+            "text": "Preheat oven to 200C/180C fan-forced"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 2,
+        "fields": {
+            "recipie": 1,
+            "number": 2,
+            "text": "Cut bread into 1.5cm-thick slices, being careful not to cut the whole way through. Place butter, garlic and parsley in a bowl. Mash with a fork until combined. Season with salt and pepper."
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 3,
+        "fields": {
+            "recipie": 1,
+            "number": 3,
+            "text": "Spread each cut side of bread with butter mixture. Wrap bread in foil. Place on a baking tray. Bake for 15 minutes or until butter mixture has melted. Unwrap garlic bread. Bake for a further 5 minutes or until golden and crisp. Serve."
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 1,
+        "fields": {
+            "recipie": 1,
+            "ingredient": 2,
+            "quantity": 450,
+            "unit": "grams",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 2,
+        "fields": {
+            "recipie": 1,
+            "ingredient": 3,
+            "quantity": 125,
+            "unit": "grams",
+            "adjective": "softened",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 3,
+        "fields": {
+            "recipie": 1,
+            "ingredient": 4,
+            "quantity": 5,
+            "unit": "cloves",
+            "adjective": "crushed",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 4,
+        "fields": {
+            "recipie": 1,
+            "ingredient": 5,
+            "quantity": 2,
+            "unit": "tablespoons",
+            "adjective": "roughly chopped",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.recipie",
+        "pk": 2,
+        "fields": {
+            "name": "Chocolate Dipped Pretzels",
+            "introduction": "Super simple and just 3 ingredients!",
+            "serves": "50"
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 4,
+        "fields": {
+            "recipie": 2,
+            "number": 1,
+            "text": "Heat dark chocolate and peanut butter in a glass bowl over boiling water."
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 5,
+        "fields": {
+            "recipie": 2,
+            "number": 2,
+            "text": "When chocolate and peanut butter has melted, dip in pretzels."
+        }
+    },
+    {
+        "model": "recipies.recipiestep",
+        "pk": 6,
+        "fields": {
+            "recipie": 2,
+            "number": 3,
+            "text": "Rest chocolate-dipped pretzels on greaseproof paper and refrigerate 1 hour or until chocolate has hardened."
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 6,
+        "fields": {
+            "name": "Dark chocolate",
+            "ingredient_type": 5,
+            "shelf_life": "365 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 5,
+        "fields": {
+            "recipie": 2,
+            "ingredient": 6,
+            "quantity": 0.5,
+            "unit": "block",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 7,
+        "fields": {
+            "name": "Kraft peanut butter",
+            "ingredient_type": 5,
+            "shelf_life": "365 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 6,
+        "fields": {
+            "recipie": 2,
+            "ingredient": 7,
+            "quantity": 1,
+            "unit": "tbs",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipies.ingredient",
+        "pk": 8,
+        "fields": {
+            "name": "Pretzels",
+            "ingredient_type": 3,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipies.recipieingredient",
+        "pk": 7,
+        "fields": {
+            "recipie": 2,
+            "ingredient": 8,
+            "quantity": 50,
+            "unit": "",
+            "adjective": "",
+            "notes": ""
+        }
     }
-  },
-  {
-    "model": "recipies.ingredienttype",
-    "pk": 2,
-    "fields": {
-      "name": "Meat"
-    }
-  },
-  {
-    "model": "recipies.ingredient",
-    "pk": 1,
-    "fields": {
-      "name": "Beef Mince",
-      "ingredient_type": 2,
-      "shelf_life": "5 00:00:00"
-    }
-  }
 ]
