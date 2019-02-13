@@ -42,7 +42,7 @@ class RecipieIngredient(models.Model):
         Recipie, on_delete=CASCADE, related_name='ingredients')
     ingredient = models.ForeignKey(
         Ingredient, on_delete=CASCADE, related_name='recipie_ingredient')
-    quantity = models.PositiveSmallIntegerField()
+    quantity = models.FloatField()
     unit = models.CharField(max_length=50)
     adjective = models.CharField(max_length=100)
     notes = models.CharField(max_length=240)
