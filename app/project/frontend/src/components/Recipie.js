@@ -6,31 +6,33 @@ const Recipie = ({ data }) =>
     !data.length ? (
         <p>Nothing to show</p>
     ) : (
-        <div className="box">
-            <div className="columns">
-                <div className="column">
-                    <h2 className="subtitle">{data[0].name}</h2>
-                    <h3>Serves: {data[0].serves}</h3>
-                    <p>{data[0].introduction}</p>
-                    <strong>Ingredients</strong>
-                    <ul>
-                        {data[0].ingredients.map(ingredient => (
-                            <li>
-                                {ingredient.quantity} {ingredient.unit} of{" "}
-                                {ingredient.adjective}{" "}
-                                {ingredient.ingredient.name}
-                            </li>
-                        ))}
-                    </ul>
-                    <strong>Method</strong>
-                    <ol>
-                        {data[0].steps.map(step => (
-                            <li>{step.text}</li>
-                        ))}
-                    </ol>
+        data.map(recipie => (
+            <div className="box">
+                <div className="columns">
+                    <div className="column">
+                        <h2 className="subtitle">{recipie.name}</h2>
+                        <h3>Serves: {recipie.serves}</h3>
+                        <p>{recipie.introduction}</p>
+                        <strong>Ingredients</strong>
+                        <ul>
+                            {recipie.ingredients.map(ingredient => (
+                                <li>
+                                    {ingredient.quantity} {ingredient.unit} of{" "}
+                                    {ingredient.adjective}{" "}
+                                    {ingredient.ingredient.name}
+                                </li>
+                            ))}
+                        </ul>
+                        <strong>Method</strong>
+                        <ol>
+                            {recipie.steps.map(step => (
+                                <li>{step.text}</li>
+                            ))}
+                        </ol>
+                    </div>
                 </div>
             </div>
-        </div>
+        ))
     );
 
 Recipie.propTypes = {
