@@ -1,41 +1,41 @@
 [
     {
-        "model": "recipies.ingredienttype",
+        "model": "recipes.ingredienttype",
         "pk": 1,
         "fields": {
             "name": "Fruit/Vegetables"
         }
     },
     {
-        "model": "recipies.ingredienttype",
+        "model": "recipes.ingredienttype",
         "pk": 2,
         "fields": {
             "name": "Meat"
         }
     },
     {
-        "model": "recipies.ingredienttype",
+        "model": "recipes.ingredienttype",
         "pk": 3,
         "fields": {
             "name": "Bakery"
         }
     },
     {
-        "model": "recipies.ingredienttype",
+        "model": "recipes.ingredienttype",
         "pk": 4,
         "fields": {
             "name": "Refridgerated"
         }
     },
     {
-        "model": "recipies.ingredienttype",
+        "model": "recipes.ingredienttype",
         "pk": 5,
         "fields": {
             "name": "Pantry"
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 1,
         "fields": {
             "name": "Lamb Shank",
@@ -44,7 +44,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 2,
         "fields": {
             "name": "Sourdough Vienna Loaf",
@@ -53,7 +53,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 3,
         "fields": {
             "name": "Butter",
@@ -62,7 +62,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 4,
         "fields": {
             "name": "Garlic",
@@ -71,7 +71,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 5,
         "fields": {
             "name": "fresh flat-leaf parsley leaves",
@@ -80,46 +80,46 @@
         }
     },
     {
-        "model": "recipies.recipie",
+        "model": "recipes.recipe",
         "pk": 1,
         "fields": {
             "name": "Easy Garlic Bread",
-            "introduction": "This simple garlic bread recipie is a match made in heaven for all kinds of pasta dishes",
+            "introduction": "This simple garlic bread recipe is a match made in heaven for all kinds of pasta dishes",
             "serves": 8
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 1,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "number": 1,
             "text": "Preheat oven to 200C/180C fan-forced"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 2,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "number": 2,
             "text": "Cut bread into 1.5cm-thick slices, being careful not to cut the whole way through. Place butter, garlic and parsley in a bowl. Mash with a fork until combined. Season with salt and pepper."
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 3,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "number": 3,
             "text": "Spread each cut side of bread with butter mixture. Wrap bread in foil. Place on a baking tray. Bake for 15 minutes or until butter mixture has melted. Unwrap garlic bread. Bake for a further 5 minutes or until golden and crisp. Serve."
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 1,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "ingredient": 2,
             "quantity": 450,
             "unit": "grams",
@@ -128,10 +128,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 2,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "ingredient": 3,
             "quantity": 125,
             "unit": "grams",
@@ -140,10 +140,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 3,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "ingredient": 4,
             "quantity": 5,
             "unit": "cloves",
@@ -152,10 +152,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 4,
         "fields": {
-            "recipie": 1,
+            "recipe": 1,
             "ingredient": 5,
             "quantity": 2,
             "unit": "tablespoons",
@@ -164,7 +164,7 @@
         }
     },
     {
-        "model": "recipies.recipie",
+        "model": "recipes.recipe",
         "pk": 2,
         "fields": {
             "name": "Chocolate Dipped Pretzels",
@@ -173,34 +173,34 @@
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 4,
         "fields": {
-            "recipie": 2,
+            "recipe": 2,
             "number": 1,
             "text": "Heat dark chocolate and peanut butter in a glass bowl over boiling water."
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 5,
         "fields": {
-            "recipie": 2,
+            "recipe": 2,
             "number": 2,
             "text": "When chocolate and peanut butter has melted, dip in pretzels."
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 6,
         "fields": {
-            "recipie": 2,
+            "recipe": 2,
             "number": 3,
             "text": "Rest chocolate-dipped pretzels on greaseproof paper and refrigerate 1 hour or until chocolate has hardened."
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 6,
         "fields": {
             "name": "Dark chocolate",
@@ -209,10 +209,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 5,
         "fields": {
-            "recipie": 2,
+            "recipe": 2,
             "ingredient": 6,
             "quantity": 0.5,
             "unit": "block",
@@ -221,7 +221,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 7,
         "fields": {
             "name": "Kraft peanut butter",
@@ -230,10 +230,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 6,
         "fields": {
-            "recipie": 2,
+            "recipe": 2,
             "ingredient": 7,
             "quantity": 1,
             "unit": "tbs",
@@ -242,7 +242,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 8,
         "fields": {
             "name": "Pretzels",
@@ -251,10 +251,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 7,
         "fields": {
-            "recipie": 2,
+            "recipe": 2,
             "ingredient": 8,
             "quantity": 50,
             "unit": "",
@@ -263,7 +263,7 @@
         }
     },
     {
-        "model": "recipies.recipie",
+        "model": "recipes.recipe",
         "pk": 3,
         "fields": {
             "name": "Lamb Parcels",
@@ -272,43 +272,43 @@
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 7,
         "fields": {
-            "recipie": 3,
+            "recipe": 3,
             "number": 1,
             "text": "Spray 4 pieces of foil lightly with oil"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 8,
         "fields": {
-            "recipie": 3,
+            "recipe": 3,
             "number": 2,
             "text": "Liberally coat each shank with soup mix"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 9,
         "fields": {
-            "recipie": 3,
+            "recipe": 3,
             "number": 3,
             "text": "Wrap in foil and place in casserole dish."
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 9,
         "fields": {
-            "recipie": 3,
+            "recipe": 3,
             "number": 4,
             "text": "Bake at 180C for 30-45 minutes, checking after approximately 30 minutes."
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 8,
         "fields": {
             "name": "French onion instant soup",
@@ -317,10 +317,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 8,
         "fields": {
-            "recipie": 3,
+            "recipe": 3,
             "ingredient": 1,
             "quantity": 4,
             "unit": "",
@@ -329,10 +329,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 9,
         "fields": {
-            "recipie": 3,
+            "recipe": 3,
             "ingredient": 8,
             "quantity": 50,
             "unit": "grams",
@@ -341,7 +341,7 @@
         }
     },
     {
-        "model": "recipies.recipie",
+        "model": "recipes.recipe",
         "pk": 4,
         "fields": {
             "name": "Oven Chips",
@@ -350,52 +350,52 @@
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 10,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "number": 1,
             "text": "Preheat oven to 220C"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 11,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "number": 2,
             "text": "Cut potatioes iunto slices approximately 1 cm thick"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 12,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "number": 3,
             "text": "Soak chips in cold water for 10 minutes, drain well, then pat dry with paper towles"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 13,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "number": 4,
             "text": "Spread chips onto baking tray, sprinkle with oil. Toss to coat."
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 11,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "number": 5,
             "text": "Bake for 45-55 minutes until golden and crisp, turning occasionally."
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 9,
         "fields": {
             "name": "Potatoes",
@@ -404,7 +404,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 10,
         "fields": {
             "name": "Olive Oil",
@@ -413,10 +413,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 10,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "ingredient": 9,
             "quantity": 6,
             "unit": "",
@@ -425,10 +425,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 11,
         "fields": {
-            "recipie": 4,
+            "recipe": 4,
             "ingredient": 10,
             "quantity": 3,
             "unit": "tablespoons",
@@ -437,7 +437,7 @@
         }
     },
     {
-        "model": "recipies.recipie",
+        "model": "recipes.recipe",
         "pk": 5,
         "fields": {
             "name": "Sizzling Cheese Bread",
@@ -446,34 +446,34 @@
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 12,
         "fields": {
-            "recipie": 5,
+            "recipe": 5,
             "number": 1,
             "text": "Melt butter and spread over bread"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 13,
         "fields": {
-            "recipie": 5,
+            "recipe": 5,
             "number": 2,
             "text": "Shake a generous amount of parmesan cheese onto the bread and press lightly so it sticks"
         }
     },
     {
-        "model": "recipies.recipiestep",
+        "model": "recipes.recipestep",
         "pk": 14,
         "fields": {
-            "recipie": 5,
+            "recipe": 5,
             "number": 3,
             "text": "Heat some oil in a frying pan and place the bread in the pan cheese side down. Cook for approximately 45 seconds."
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 11,
         "fields": {
             "name": "white bread",
@@ -482,7 +482,7 @@
         }
     },
     {
-        "model": "recipies.ingredient",
+        "model": "recipes.ingredient",
         "pk": 12,
         "fields": {
             "name": "parmesan cheese",
@@ -491,10 +491,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 12,
         "fields": {
-            "recipie": 5,
+            "recipe": 5,
             "ingredient": 11,
             "quantity": 1,
             "unit": "slice",
@@ -503,10 +503,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 13,
         "fields": {
-            "recipie": 5,
+            "recipe": 5,
             "ingredient": 3,
             "quantity": 0.5,
             "unit": "tablespoons",
@@ -515,10 +515,10 @@
         }
     },
     {
-        "model": "recipies.recipieingredient",
+        "model": "recipes.recipeingredient",
         "pk": 14,
         "fields": {
-            "recipie": 5,
+            "recipe": 5,
             "ingredient": 12,
             "quantity": 0.5,
             "unit": "cup",

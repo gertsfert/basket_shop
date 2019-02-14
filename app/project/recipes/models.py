@@ -20,28 +20,28 @@ class Ingredient(models.Model):
     shelf_life = models.DurationField(blank=True)
 
 
-class Recipie(models.Model):
+class Recipe(models.Model):
     def __str__(self):
         return self.name
 
     name = models.CharField(max_length=200)
     introduction = models.TextField()
-    photo = models.ImageField(upload_to='recipie_photos', blank=True)
+    photo = models.ImageField(upload_to='recipe_photos', blank=True)
     serves = models.PositiveSmallIntegerField()
 
 
-class RecipieStep(models.Model):
-    recipie = models.ForeignKey(
-        Recipie, on_delete=CASCADE, related_name='steps')
+class RecipeStep(models.Model):
+    recipe = models.ForeignKey(
+        Recipe, on_delete=CASCADE, related_name='steps')
     number = models.PositiveSmallIntegerField()
     text = models.TextField()
 
 
-class RecipieIngredient(models.Model):
-    recipie = models.ForeignKey(
-        Recipie, on_delete=CASCADE, related_name='ingredients')
+class RecipeIngredient(models.Model):
+    recipe = models.ForeignKey(
+        Recipe, on_delete=CASCADE, related_name='ingredients')
     ingredient = models.ForeignKey(
-        Ingredient, on_delete=CASCADE, related_name='recipie_ingredient')
+        Ingredient, on_delete=CASCADE, related_name='recipe_ingredient')
     quantity = models.FloatField()
     unit = models.CharField(max_length=50)
     adjective = models.CharField(max_length=100)

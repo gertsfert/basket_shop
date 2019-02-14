@@ -1,6 +1,6 @@
 from rest_framework import serializers
-from recipies.models import (IngredientType, Ingredient, RecipieIngredient,
-                             RecipieStep, Recipie)
+from recipes.models import (IngredientType, Ingredient, RecipeIngredient,
+                            RecipeStep, Recipe)
 
 
 class IngredientTypeSerializers(serializers.ModelSerializer):
@@ -17,39 +17,39 @@ class IngredientSerializers(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class RecipieIngredientSerializers(serializers.ModelSerializer):
+class RecipeIngredientSerializers(serializers.ModelSerializer):
     ingredient = IngredientSerializers(read_only=True)
 
     class Meta:
-        model = RecipieIngredient
+        model = RecipeIngredient
         fields = ('id', 'ingredient', 'quantity', 'unit',
                   'adjective', 'notes')
 
 
-class RecipieStepSerializers(serializers.ModelSerializer):
+class RecipeStepSerializers(serializers.ModelSerializer):
     class Meta:
-        model = RecipieStep
+        model = RecipeStep
         fields = ('id', 'number', 'text')
 
 
-class RecipieDetailSerializers(serializers.ModelSerializer):
+class RecipeDetailSerializers(serializers.ModelSerializer):
     """
-    Returns the details of the recipie
+    Returns the details of the recipe
     """
-    steps = RecipieStepSerializers(many=True, read_only=True)
-    ingredients = RecipieIngredientSerializers(many=True, read_only=True)
+    steps = RecipeStepSerializers(many=True, read_only=True)
+    ingredients = RecipeIngredientSerializers(many=True, read_only=True)
 
     class Meta:
-        model = Recipie
+        model = Recipe
         fields = ('id', 'name', 'introduction',
                   'serves', 'ingredients', 'steps')
 
 
-class RecipieBrowseSerializers(serializers.ModelSerializer):
+class RecipeBrowseSerializers(serializers.ModelSerializer):
     """
-    Returns all recipies for a browse view
+    Returns all recipes for a browse view
     """
     class Meta:
-        model = Recipie
+        model = Recipe
         fields = ('id', 'name', 'introduction',
                   'serves')

@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
 
-    'recipies',
+    'recipes',
     'frontend'
 ]
 

@@ -2,20 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 import key from "weak-key";
 
-const Recipie = ({ data }) =>
+const Recipe = ({ data }) =>
     !data.length ? (
         <p>Nothing to show</p>
     ) : (
-        data.map(recipie => (
+        data.map(recipe => (
             <div className="box">
                 <div className="columns">
                     <div className="column">
-                        <h2 className="subtitle">{recipie.name}</h2>
-                        <h3>Serves: {recipie.serves}</h3>
-                        <p>{recipie.introduction}</p>
+                        <h2 className="subtitle">{recipe.name}</h2>
+                        <h3>Serves: {recipe.serves}</h3>
+                        <p>{recipe.introduction}</p>
                         <strong>Ingredients</strong>
                         <ul>
-                            {recipie.ingredients.map(ingredient => (
+                            {recipe.ingredients.map(ingredient => (
                                 <li>
                                     {ingredient.quantity} {ingredient.unit} of{" "}
                                     {ingredient.adjective}{" "}
@@ -25,7 +25,7 @@ const Recipie = ({ data }) =>
                         </ul>
                         <strong>Method</strong>
                         <ol>
-                            {recipie.steps.map(step => (
+                            {recipe.steps.map(step => (
                                 <li>{step.text}</li>
                             ))}
                         </ol>
@@ -35,8 +35,8 @@ const Recipie = ({ data }) =>
         ))
     );
 
-Recipie.propTypes = {
+Recipe.propTypes = {
     data: PropTypes.array.isRequired
 };
 
-export default Recipie;
+export default Recipe;
