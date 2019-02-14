@@ -7,4 +7,5 @@ urlpatterns = [
     path('api/recipieingredient/',
          views.RecipieIngredientSerializers.as_view()),
     path('api/recipies/', views.RecipieBrowseSerializers.as_view()),
+    path('api/recipie/<int:pk>/', views.RecipieDetailSerializers.as_view()),
 ]

@@ -23,3 +23,9 @@ class RecipieIngredientSerializers(generics.ListCreateAPIView):
 class RecipieBrowseSerializers(generics.ListCreateAPIView):
     queryset = Recipie.objects.all()
     serializer_class = RecipieBrowseSerializers
+
+
+class RecipieDetailSerializers(generics.RetrieveAPIView):
+    queryset = Recipie.objects.all()
+    serializer_class = RecipieDetailSerializers
+    lookup_field = ('pk')

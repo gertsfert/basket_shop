@@ -32,7 +32,7 @@ class RecipieStepSerializers(serializers.ModelSerializer):
         fields = ('id', 'number', 'text')
 
 
-class RecipieSerializers(serializers.ModelSerializer):
+class RecipieDetailSerializers(serializers.ModelSerializer):
     """
     Returns the details of the recipie
     """
