@@ -525,5 +525,311 @@
             "adjective": "",
             "notes": ""
         }
+    },
+    {
+        "model": "recipes.recipe",
+        "pk": 6,
+        "fields": {
+            "name": "Chinese Pork Mince Stir-Fry",
+            "introduction": "This is a weekly staple at our house, because I can whip it up in no time.",
+            "serves": 4
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 13,
+        "fields": {
+            "name": "Chili",
+            "ingredient_type": 1,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 14,
+        "fields": {
+            "name": "ginger",
+            "ingredient_type": 1,
+            "shelf_life": "120 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 15,
+        "fields": {
+            "name": "sesame oil",
+            "ingredient_type": 5,
+            "shelf_life": "365 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 16,
+        "fields": {
+            "name": "Pork Mince",
+            "ingredient_type": 2,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 17,
+        "fields": {
+            "name": "Sprint Onions",
+            "ingredient_type": 1,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 18,
+        "fields": {
+            "name": "brown sugar",
+            "ingredient_type": 5,
+            "shelf_life": "730 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 19,
+        "fields": {
+            "name": "soy sauce",
+            "ingredient_type": 5,
+            "shelf_life": "730 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 20,
+        "fields": {
+            "name": "oyster sauce",
+            "ingredient_type": 5,
+            "shelf_life": "365 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 21,
+        "fields": {
+            "name": "green beans",
+            "ingredient_type": 1,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 22,
+        "fields": {
+            "name": "peanuts",
+            "ingredient_type": 5,
+            "shelf_life": "120 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.ingredient",
+        "pk": 23,
+        "fields": {
+            "name": "basil",
+            "ingredient_type": 1,
+            "shelf_life": "7 00:00:00"
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 15,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 4,
+            "quantity": 2,
+            "unit": "cloves",
+            "adjective": "crushed",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 16,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 13,
+            "quantity": 1,
+            "unit": "whole",
+            "adjective": "thinly sliced",
+            "notes": "fresh"
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 17,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 14,
+            "quantity": 1,
+            "unit": "tbs",
+            "adjective": "finely chopped",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 18,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 15,
+            "quantity": 2,
+            "unit": "tsp",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 19,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 16,
+            "quantity": 500,
+            "unit": "grams",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 20,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 17,
+            "quantity": 3,
+            "unit": "",
+            "adjective": "sliced",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 21,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 18,
+            "quantity": 2,
+            "unit": "tsp",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 22,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 19,
+            "quantity": 2,
+            "unit": "tbs",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 23,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 20,
+            "quantity": 2,
+            "unit": "tbs",
+            "adjective": "",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 24,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 21,
+            "quantity": 250,
+            "unit": "grams",
+            "adjective": "fresh",
+            "notes": "cut lengthways"
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 25,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 22,
+            "quantity": 30,
+            "unit": "grams",
+            "adjective": "chopped",
+            "notes": "unsalted"
+        }
+    },
+    {
+        "model": "recipes.recipeingredient",
+        "pk": 26,
+        "fields": {
+            "recipe": 6,
+            "ingredient": 23,
+            "quantity": 3,
+            "unit": "tbs",
+            "adjective": "fresh",
+            "notes": ""
+        }
+    },
+    {
+        "model": "recipes.recipestep",
+        "pk": 15,
+        "fields": {
+            "recipe": 6,
+            "number": 3,
+            "text": "Cook for a minute or so, then add the pork mince. Once pork is cooked, add green beans and stir fry"
+        }
+    },
+    {
+        "model": "recipes.recipestep",
+        "pk": 16,
+        "fields": {
+            "recipe": 6,
+            "number": 2,
+            "text": "Heat a non-stick wok over high heat and add oil. Once oil is hot, add garlic, ginger, chilli and spring onions and stor."
+        }
+    },
+    {
+        "model": "recipes.recipestep",
+        "pk": 17,
+        "fields": {
+            "recipe": 6,
+            "number": 1,
+            "text": "Combine chilli, ginger and garlic in a bowl. Cut green beans into 5cm lengths."
+        }
+    },
+    {
+        "model": "recipes.recipestep",
+        "pk": 18,
+        "fields": {
+            "recipe": 6,
+            "number": 4,
+            "text": "Whiel beans are still crips, add sugar, soy sauce, oyster sauce and 2 tablespoons of water"
+        }
+    },
+    {
+        "model": "recipes.recipestep",
+        "pk": 19,
+        "fields": {
+            "recipe": 6,
+            "number": 6,
+            "text": "Finally add peanuts and fresh basil, and serve immediately with jasmine rice"
+        }
+    },
+    {
+        "model": "recipes.recipestep",
+        "pk": 20,
+        "fields": {
+            "recipe": 6,
+            "number": 5,
+            "text": "Allow to cook for a further 2 minutres or until the sauce has reduced a little"
+        }
     }
 ]
