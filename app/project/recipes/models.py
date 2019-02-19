@@ -36,6 +36,9 @@ class RecipeStep(models.Model):
     number = models.PositiveSmallIntegerField()
     text = models.TextField()
 
+    class Meta:
+        ordering = ["recipe", "number"]
+
 
 class RecipeIngredient(models.Model):
     recipe = models.ForeignKey(
