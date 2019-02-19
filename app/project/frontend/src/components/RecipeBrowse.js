@@ -6,10 +6,10 @@ const Recipe = ({ data }) =>
     !data.length ? (
         <p>Nothing to show</p>
     ) : (
-        <div class="columns">
-            <div class="column">
+        <div className="columns">
+            <div className="column">
                 {data.map(recipe => (
-                    <div className="box">
+                    <div className="box" key={recipe.id}>
                         <div className="columns">
                             <div className="column">
                                 <h2 className="subtitle">{recipe.name}</h2>

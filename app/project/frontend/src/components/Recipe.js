@@ -7,7 +7,7 @@ const Recipe = ({ data }) =>
         <p>Nothing to show</p>
     ) : (
         data.map(recipe => (
-            <div className="box">
+            <div className="box" key={recipe.pk}>
                 <div className="columns">
                     <div className="column">
                         <h2 className="subtitle">{recipe.name}</h2>
