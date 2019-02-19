@@ -10,22 +10,17 @@ class IngredientTypeListCreate(generics.ListCreateAPIView):
     serializer_class = IngredientTypeSerializers
 
 
-class IngredientSerializers(generics.ListCreateAPIView):
+class IngredientViewSet(generics.ListCreateAPIView):
     queryset = Ingredient.objects.all()
     serializer_class = IngredientSerializers
 
 
-class RecipeIngredientSerializers(generics.ListCreateAPIView):
-    queryset = RecipeIngredient.objects.all()
-    serializer_class = RecipeIngredientSerializers
-
-
-class RecipeBrowseSerializers(generics.ListCreateAPIView):
+class RecipeBrowseViewSet(generics.ListCreateAPIView):
     queryset = Recipe.objects.all()
     serializer_class = RecipeBrowseSerializers
 
 
-class RecipeDetailSerializers(generics.RetrieveAPIView):
+class RecipeDetailViewSet(generics.RetrieveAPIView):
     queryset = Recipe.objects.all()
     serializer_class = RecipeDetailSerializers
     lookup_field = ('pk')
