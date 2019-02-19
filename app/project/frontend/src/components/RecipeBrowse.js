@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import RecipeSummaryCard from "./RecipeSummaryCard";
 
 const Recipe = ({ data }) =>
     !data.length ? (
@@ -8,14 +9,8 @@ const Recipe = ({ data }) =>
         <div className="columns">
             <div className="column">
                 {data.map(recipe => (
-                    <div className="box" key={recipe.id}>
-                        <div className="columns">
-                            <div className="column">
-                                <h2 className="subtitle">{recipe.name}</h2>
-                                <h3>Serves: {recipe.serves}</h3>
-                                <p>{recipe.introduction}</p>
-                            </div>
-                        </div>
+                    <div key={recipe.id}>
+                        <RecipeSummaryCard recipe={recipe} />
                     </div>
                 ))}
             </div>
