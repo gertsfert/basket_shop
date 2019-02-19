@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import key from "weak-key";
 
 const Recipe = ({ data }) =>
     !data.length ? (
